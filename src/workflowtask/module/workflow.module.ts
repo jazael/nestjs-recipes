@@ -4,8 +4,8 @@ import { WorkflowTask } from '../model/WorkflowTask';
 import { WorkflowService } from '../services/WorkflowService';
 
 @Module({
-  imports: [SequelizeModule.forFeature([WorkflowTask])], // Asegúrate de tener esto
+  imports: [SequelizeModule.forFeature([WorkflowTask])],
   providers: [WorkflowService],
-  exports: [WorkflowService], // Si necesitas exportarlo a otros módulos
+  exports: [WorkflowService],
 })
 export class WorkflowModule {}
